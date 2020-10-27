@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: OrderDeliveryManagement
-          image: username/OrderDeliveryManagement:latest
+          image: skcc02/OrderDeliveryManagement:latest
           ports:
             - containerPort: 8080
           readinessProbe:
