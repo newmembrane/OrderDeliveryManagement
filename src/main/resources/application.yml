@@ -38,7 +38,8 @@ logging:
 server:
   port: 8083
 ---
-
+server:
+  port: 8080
 spring:
   profiles: docker
   cloud:
