@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: OrderDeliveryManagement
+  name: orderdeliverymanagement
   labels:
-    app: OrderDeliveryManagement
+    app: orderdeliverymanagement
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: OrderDeliveryManagement
+      app: orderdeliverymanagement
   template:
     metadata:
       labels:
-        app: OrderDeliveryManagement
+        app: orderdeliverymanagement
     spec:
       containers:
-        - name: OrderDeliveryManagement
-          image: skcc02/OrderDeliveryManagement:latest
+        - name: orderdeliverymanagement
+          image: skcc02acr.azurecr.io/orderdeliverymanagement:latest
           ports:
             - containerPort: 8080
           readinessProbe:
