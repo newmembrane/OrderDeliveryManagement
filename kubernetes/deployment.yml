@@ -16,11 +16,6 @@ spec:
     spec:
       containers:
         - name: orderdeliverymanagement
-          resources:
-            limits:
-              cpu: 500m
-            requests:
-              cpu: 200m
           image: skcc12acr.azurecr.io/orderdeliverymanagement:latest
           ports:
             - containerPort: 8080
